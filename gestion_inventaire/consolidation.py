@@ -39,7 +39,12 @@ class Consolidateur:
         Sauvegarde les données consolidées dans un fichier CSV.
 
         Args:
-            chemin (str): Chemin du fichier de sortie.
+            chemin (str): Chemin du fichier CSV à créer.
         """
+        if self.data.empty:
+            print("Aucune donnée consolidée à sauvegarder.")
+            return
+
         self.data.to_csv(chemin, index=False)
         print(f"Données consolidées sauvegardées dans {chemin}")
+
