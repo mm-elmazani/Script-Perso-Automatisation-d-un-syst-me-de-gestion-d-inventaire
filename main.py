@@ -9,7 +9,16 @@ CHEMIN_PAR_DEFAUT = r"C:\Users\momoe\OneDrive - EPHEC asbl\BAC 2 - Q1\Q1 - Dev I
 DOSSIER_RAPPORT = r"C:\Users\momoe\OneDrive - EPHEC asbl\BAC 2 - Q1\Q1 - Dev Info\4 - devoir\Scipt-perso\outputs_rapport"
 
 # Vérifier que le dossier de sortie existe, sinon le créer
-os.makedirs(DOSSIER_RAPPORT, exist_ok=True)
+
+
+def creer_dossier_si_absent(chemin):
+    """
+    Crée un dossier s'il n'existe pas déjà.
+    """
+    if not os.path.exists(chemin):
+        os.makedirs(chemin)
+
+creer_dossier_si_absent(DOSSIER_RAPPORT)
 
 def afficher_menu():
     """

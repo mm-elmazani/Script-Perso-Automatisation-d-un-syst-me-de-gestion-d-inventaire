@@ -34,6 +34,7 @@ class Consolidateur:
         self.data.drop_duplicates(inplace=True)
         self.data.dropna(inplace=True)
 
+
     def sauvegarder(self, chemin):
         """
         Sauvegarde les données consolidées dans un fichier CSV.
@@ -48,3 +49,11 @@ class Consolidateur:
         self.data.to_csv(chemin, index=False)
         print(f"Données consolidées sauvegardées dans {chemin}")
 
+    def verifier_fichiers(dossier):
+        """
+        Vérifie que tous les fichiers dans un dossier sont des fichiers CSV.
+        """
+        fichiers_csv = [f for f in os.listdir(dossier) if f.endswith(".csv")]
+        if not fichiers_csv:
+            raise FileNotFoundError("Aucun fichier CSV trouvé dans le dossier spécifié.")
+        return fichiers_csv

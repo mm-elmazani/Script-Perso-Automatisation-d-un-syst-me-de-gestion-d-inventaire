@@ -1,6 +1,6 @@
 Produit,Quantité,Prix_Unitaire,Catégorie
-Téléphone,10,500,Électronique
-Tablette,15,300,Électronique
-Ordinateur,7,1200,Électronique
-Écouteurs,50,50,Électronique
-Clavier,30,70,Électronique
+Téléphone,10,500.0,Électronique
+Tablette,15,300.0,Électronique
+Ordinateur,7,1200.0,Électronique
+Écouteurs,50,50.0,Électronique
+Clavier,30,70.0,Électronique

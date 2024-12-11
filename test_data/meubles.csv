@@ -1,6 +1,6 @@
 Produit,Quantité,Prix_Unitaire,Catégorie
-Chaise,20,50,Meubles
-Table,10,120,Meubles
-Armoire,5,200,Meubles
-Lit,7,500,Meubles
-Canapé,3,700,Meubles
+Chaise,20,50.0,Meubles
+Table,10,120.0,Meubles
+Armoire,5,200.0,Meubles
+Lit,7,500.0,Meubles
+Canapé,3,700.0,Meubles
